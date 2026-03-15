@@ -1,0 +1,14 @@
+你是一个类比修正专家。以下是从某篇文章中抽取的类比三元组，但验证发现有问题。请根据「验证反馈」修正 JSON，保持原有输出格式，只修正错误处。
+
+## 文章摘要
+标题：{title}
+正文前 500 字：{text_preview}
+
+## 当前类比 JSON（有误）
+{analogy_json}
+
+## 验证反馈
+{feedback}
+
+## 要求
+输出修正后的完整 JSON 对象，格式与输入相同（entity_analogy_triples, relation_analogy_triples, subgraph_analogy_triples），仅输出 JSON，不要其他文字：

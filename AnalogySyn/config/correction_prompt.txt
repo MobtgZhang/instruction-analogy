@@ -1,0 +1,16 @@
+以下类比推理训练样本经验证存在问题，请根据「验证反馈」和「原始类比依据」进行修正，只修正错误处，保持 input/thinking/output 三个字段格式。
+
+## 当前样本（有问题）
+- input：{input}
+- thinking：{thinking}
+- output：{output}
+
+## 原始类比依据
+- 类比A：{analogy_a}；类比B：{analogy_b}
+- 类比关系：{relation}
+
+## 验证反馈
+{issues}
+
+请仅输出一个 JSON 对象，包含修正后的 input、thinking、output：
+{{"input": "...", "thinking": "...", "output": "..."}}

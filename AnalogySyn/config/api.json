@@ -1,0 +1,10 @@
+{
+  "openai_api_key": "",
+  "openai_base_url": "",
+  "llm_model": "gpt-4o-mini",
+  "data_dir": "",
+  "out_path": "data/instructions.jsonl",
+  "use_encyclopedia": true,
+  "max_instructions": 0,
+  "max_correction_retries": 2
+}

@@ -1,0 +1,27 @@
+你是一个类比质量审核专家。请根据「文章摘要」和「网络搜索参考」（如有），判断下面三类类比三元组的**属性描述**和**类比关系**是否合理、正确。
+
+## 文章摘要
+标题：{title}
+语言：{lang}
+正文前 500 字：{text_preview}
+
+## 网络搜索参考（用于核对实体/关系事实）
+{search_context}
+
+## 待验证的三类类比（JSON）
+{analogy_json}
+
+## 验证要求
+对每一类（实体类比、关系类比、子图类比）中的每一项，请判断：
+1. **元素A、元素B** 是否在文中有依据或常识正确；
+2. **元素A属性、元素B属性** 描述是否准确、完整；
+3. **类比关系** 是否成立（A 与 B 是否确实构成合理类比）。
+
+请仅输出一个 JSON 对象，不要其他说明：
+{
+  "all_valid": true 或 false,
+  "entity_analogy_triples": { "valid": true/false, "issues": ["问题1", "问题2"] 或 [] },
+  "relation_analogy_triples": { "valid": true/false, "issues": ["问题1"] 或 [] },
+  "subgraph_analogy_triples": { "valid": true/false, "issues": ["问题1"] 或 [] }
+}
+若全部正确则 all_valid 为 true 且各 issues 为空。请开始输出 JSON：

@@ -1,0 +1,4 @@
+# 类比抽取与验证（build.py）
+openai>=1.0.0
+duckduckgo-search>=4.0.0
+datasets  # 构建平衡语料时使用

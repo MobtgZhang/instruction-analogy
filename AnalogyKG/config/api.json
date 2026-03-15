@@ -1,0 +1,13 @@
+{
+  "openai_api_key": "",
+  "openai_base_url": "",
+  "llm_model": "gpt-4o-mini",
+  "data_path": "data/balanced",
+  "cache_dir": "data/wikipedia",
+  "out_dir": "data/balanced",
+  "dataset_name": "wikimedia/wikipedia",
+  "sample_per_lang": 20000,
+  "max_articles": 0,
+  "validation_max_retries": 3,
+  "no_web_search": false
+}
